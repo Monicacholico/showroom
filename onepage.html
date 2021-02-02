@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Blak | Multi-Purpose HTML5 Template </title>
+<meta name="keywords" content="" />
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Mobile view -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" type="text/css" href="js/bootstrap/bootstrap.min.css">
+
+<!-- Google fonts - witch you want to use - (rest you can just remove) -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Yesteryear' rel='stylesheet' type='text/css'>
+
+<!-- Template's stylesheets -->
+<link rel="stylesheet" href="js/megamenu/stylesheets/screen.css">
+<link rel="stylesheet" href="js/megamenu/stylesheets/onepage.css">
+<link rel="stylesheet" href="css/theme-default.css" type="text/css">
+<link rel="stylesheet" href="js/loaders/stylesheets/screen.css">
+<link rel="stylesheet" href="css/corporate.css" type="text/css">
+<link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="fonts/Simple-Line-Icons-Webfont/simple-line-icons.css" media="screen" />
+<link rel="stylesheet" href="fonts/et-line-font/et-line-font.css">
+<link rel="stylesheet" type="text/css" href="js/revolution-slider/css/settings.css">
+<link rel="stylesheet" type="text/css" href="js/revolution-slider/css/layers.css">
+<link rel="stylesheet" type="text/css" href="js/revolution-slider/css/navigation.css">
+<link href="js/owl-carousel/owl.carousel.css" rel="stylesheet">
+<link href="js/owl-carousel/owl.theme.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="js/cubeportfolio/cubeportfolio.min.css">
+<link rel="stylesheet" href="js/parallax/main.css">
+<!-- Template's stylesheets END -->
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Style Customizer's stylesheets -->
+
+<link rel="stylesheet/less" type="text/css" href="less/skin.less">
+<!-- Style Customizer's stylesheets END -->
+
+<!-- Skin stylesheet -->
+
+</head>
+
+<body data-spy="scroll" data-target="#menu">
+<div class="over-loader loader-live">
+  <div class="loader">
+    <div class="loader-item style4">
+      <div class="cube1"></div>
+      <div class="cube2"></div>
+    </div>
+  </div>
+</div>
+<!--end loading--> 
+
+<!-- Style Customizer -->
+<section id="style-customizer">
+  <div class="style-customizer-wrap form-horizontal">
+    <h4 class="sc-header">Style Customizer</h4>
+    <h5>Layout Style</h5>
+    <div class="sc-variable-row form-group">
+      <div class="radio-group col-xs-12">
+        <input type="radio" name="sc-layout-type" id="sc-layout-type-boxed" class="sc-variable" data-key="layoutType" value="boxed" checked>
+        <input type="radio" name="sc-layout-type" id="sc-layout-type-wide" class="sc-variable" data-key="layoutType" value="wide">
+        <label for="sc-layout-type-wide" class="style-fweight-normal">Wide</label>
+        <label for="sc-layout-type-boxed" class="style-fweight-normal">Boxed</label>
+      </div>
+    </div>
+    <fieldset id="outer-bg-section">
+      <h5 class="customizer-style-tytle-padd">Outer Background Styles</h5>
+      <div class="sc-variable-row form-group">
+        <div class="col-xs-12">
+          <select name="sc-bg-outer-type" id="sc-bg-outer-type" data-key="outerBgType" class="sc-variable col-xs-8">
+            <option value="color" selected>Solid color</option>
+            <option value="pattern">Pattern</option>
+            <option value="image">Image</option>
+          </select>
+          <div class="col-xs-4">
+            <div id="sc-bg-outer-color-wrap">
+              <input type="color" name="sc-bg-outer-color" id="sc-bg-outer-color" class="sc-variable" data-key="outerBgColor">
+            </div>
+            <div id="sc-bg-outer-image-wrap">
+              <input type="file" accept="image/*" name="sc-bg-outer-image" id="sc-bg-outer-image" class="sc-variable sr-only" data-key="outerBgImage">
+              <label for="sc-bg-outer-image" class="sc-btn" title="Upload image"><i class="fa fa-upload"></i> </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <h5 class="customizer-style-tytle-padd">Color Options</h5>
+    <div class="sc-variable-row form-group style-form-group">
+      <label for="sc-color-prim" class="col-xs-8 control-label color-text">Primary Color</label>
+      <div class="col-xs-4">
+        <input type="color" id="sc-color-prim" class="sc-variable" data-key="colorPrimary">
+      </div>
+    </div>
+    <br/>
+    <div class="form-group">
+      <div class="col-xs-12">
+        <button class="sc-btn" id="sc-download-css"><i class="fa fa-download"></i> Get CSS file</button>
+      </div>
+    </div>
+    <br/>
+    <br/>
+    <div> <a class="sty-demo-btn" href="http://codelayers.net/templates/arma/demo/demo.html" target="_blank">Demos</a> </div>
+  </div>
+  <button id="sc-toggle" title="Styles Customizer"><i class="fa fa-wrench"></i> </button>
+</section>
+<div class="modal fade" tabindex="-1" role="dialog" id="afterSaveCSSFileModal" aria-labelledby="afterSaveCSSFileModalLabel">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="afterSaveCSSFileModalLabel">File saved</h4>
+      </div>
+      <div class="modal-body"> In order to apply the generated custom styles to your template, please follow these steps:
+        <ol>
+          <li class="sc-after-save-todo-point-file">Upload the "skin.css" file to "css" directory in your template</li>
+          <li class="sc-after-save-todo-point-image">Upload the image file to "img" directory in your template. Keep the image file name unchanged.</li>
+          <li class="sc-after-save-todo-point-stylesheet-code"> Copy this code and paste it into "index.html" file in your template, after the line marked as <code>&lt;!-- Skin stylesheet --&gt;</code>
+            <pre><code>&lt;link rel="stylesheet" href="css/skin.css"&gt;</code></pre>
+          </li>
+          <li class="sc-after-save-todo-point-preloader"> Copy this code and paste it into "index.html" file in your template, after the line marked as <code>&lt;!-- Preloader icon --&gt;</code>
+            <pre><code class="sc-preloader-html"></code></pre>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Style customizer END -->
+
+<div class="wrapper-boxed">
+  <div class="site-wrapper">
+    <div id="section1"></div>
+    <div class="header-section pin-style style4">
+      <div class="container">
+        <div class="mod-menu">
+          <div class="row">
+            <div class="col-sm-2"> <a href="#" title="" class="logo mar-4"> <img src="images/logo/logo-dark.png" alt=""> </a> </div>
+            <div class="col-sm-10">
+              <div class="main-nav" id="navbar-example">
+                <ul class="nav navbar-nav top-nav">
+                  <li class="search-parent"> <a href="#" title=""><i aria-hidden="true" class="fa fa-search"></i></a>
+                    <div class="search-box">
+                      <div class="content">
+                        <div class="form-control">
+                          <input type="text" placeholder="Type to search" />
+                          <a href="#" class="search-btn"><i aria-hidden="true" class="fa fa-search"></i></a> </div>
+                        <a href="#" class="close-btn">x</a> </div>
+                    </div>
+                  </li>
+                  <li class="cart-parent"> <a href="#" title=""> <i aria-hidden="true" class="fa fa-shopping-cart"></i> <span class="number"> 4 </span> </a>
+                    <div class="cart-box">
+                      <div class="content">
+                        <div class="row">
+                          <div class="col-xs-8"> 2 item(s) </div>
+                          <div class="col-xs-4 text-right"> <span>$99</span> </div>
+                        </div>
+                        <ul>
+                          <li> <img src="http://via.placeholder.com/80x80" alt=""> Fashion Hat <span>$30</span> <a href="#" title="" class="close-btn">x</a> </li>
+                          <li> <img src="http://via.placeholder.com/80x80" alt=""> Fashion Hat <span>$30</span> <a href="#" title="" class="close-btn">x</a> </li>
+                        </ul>
+                        <div class="row">
+                          <div class="col-xs-6"> <a href="#" title="View Cart" class="btn btn-block btn-warning">View Cart</a> </div>
+                          <div class="col-xs-6"> <a href="#" title="Check out" class="btn btn-block btn-primary">Check out</a> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="visible-xs menu-icon"> <a href="javascript:void(0)" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false"> <i aria-hidden="true" class="fa fa-bars"></i> </a> </li>
+                </ul>
+                <div id="menu" class="collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="mega-menu active"> <a href="#section1" title="">Home</a></li>
+                    <li> <a href="#section2" title="">About us</a> <span class="arrow"></span>
+                      <ul class="dm-align-2">
+                        <li> <a href="#" title="">About style 1</a> </li>
+                        <li> <a href="#" title="">About style 2</a> </li>
+                        <li> <a href="#" title="">About style 3</a> <span class="arrow"></span>
+                          <ul>
+                            <li> <a href="#" title="">Our Mission</a> </li>
+                            <li> <a href="#" title="">Our History</a> </li>
+                            <li> <a href="#" title="">Awards</a> </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li> <a href="#section3" title="">Services</a> </li>
+                    <li> <a href="#section4" title="">Team</a> </li>
+                    <li> <a href="#section5" title="blog">Gallery</a> </li>
+                    <li class="right"> <a href="#section6" title="">Contact</a> <span class="arrow"></span>
+                      <ul>
+                        <li> <a href="#" title="">Contact style 1</a> </li>
+                        <li> <a href="#" title="">Contact style 2</a> </li>
+                        <li> <a href="#" title="">Contact style 3</a> <span class="arrow"></span>
+                          <ul>
+                            <li> <a href="#" title="">Address Address</a> </li>
+                            <li> <a href="#" title="">Maps</a> </li>
+                            <li> <a href="#" title="">Forms</a> </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end menu-->
+    
+    <div class="clearfix"></div>
+    
+   <!-- START REVOLUTION SLIDER 5.0 -->
+    <div class="slide-tmargin">
+      <div class="slidermaxwidth">
+        <div class="rev_slider_wrapper"> 
+          <!-- START REVOLUTION SLIDER 5.0 auto mode -->
+          <div id="rev_slider" class="rev_slider"  data-version="5.0">
+            <ul>
+            
+                <!-- SLIDE  -->
+              <li data-index="rs-1" data-transition="fade" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-rotate="0"  data-saveperformance="off"  data-title="Love it?" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                
+                <!-- MAIN IMAGE --> 
+
+                
+                <img src="http://via.placeholder.com/2000x1300"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="20000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                
+            <!-- LAYER NR. 1 -->
+                <div class="tp-caption montserrat uppercase fweight-6 text-white tp-resizeme"
+			data-x="['left','left','center','center']" data-hoffset="['60','50','0','0']" 
+			data-y="['top','top','top','top']" data-voffset="['300','100','100','110']" 
+			data-fontsize="['70','60','50','30']"
+			data-lineheight="['100','100','100','50']"
+			data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"			 
+			data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
+			data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+			data-mask_in="x:0px;y:0px;" 
+			data-mask_out="x:inherit;y:inherit;" 
+			data-start="1000" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 						
+			style="z-index: 7; white-space: nowrap;"> Crafted  </div>
+                
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption montserrat uppercase fweight-6 text-white tp-resizeme"
+			data-x="['left','left','center','center']" data-hoffset="['60','50','0','0']" 
+			data-y="['top','top','top','top']" data-voffset="['360','150','150','150']" 
+			data-fontsize="['70','60','50','30']"
+			data-lineheight="['100','100','100','50']"
+			data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"			 
+			data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
+			data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+			data-mask_in="x:0px;y:0px;" 
+			data-mask_out="x:inherit;y:inherit;" 
+			data-start="1500" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 						
+			style="z-index: 7; white-space: nowrap;">Multi Use</div>
+                
+                <!-- LAYER NR. 3 -->
+                <div class="tp-caption raleway white text-white tp-resizeme"
+			data-x="['left','left','center','center']" data-hoffset="['60','50','0','0']" 
+			data-y="['top','top','top','top']" data-voffset="['450','240','240','200']" 
+			data-fontsize="['16','16','14','14']"
+			data-lineheight="['70','70','70','50']"
+			data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"			 
+			data-transform_in="z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;s:1500;e:Power3.easeInOut;" 
+			data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
+			data-mask_in="x:0px;y:0px;" 
+			data-mask_out="x:inherit;y:inherit;" 
+			data-start="2000" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 						
+			style="z-index: 7; white-space: nowrap;">Creative,modern and Responsive</div>
+            
+               <!-- LAYER NR. 2 -->
+            <div class="tp-caption sbut3" 
+			data-x="['left','left','center','center']" data-hoffset="['40','50','0','0']" 
+			data-y="['top','top','top','top']" data-voffset="['550','350','370','300']"
+			data-whitespace="nowrap"
+			data-type="text" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];","speed":2000,"to":"o:1;","delay":2500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[30,30,30,30]"
+			data-paddingright="[30,30,30,30]"
+			data-paddingbottom="[30,30,30,30]"
+			data-paddingleft="[30,30,30,30]"
+
+			 style="z-index: 7;" ><a href="#">Get Started Now!</a>  </div>
+             
+
+		<!-- LAYER NR. 3 -->
+		<div class="tp-caption   tp-resizeme rs-parallaxlevel-2" 
+			 id="slide-2934-layer-3" 
+			 data-x="['left','left','center','center']" data-hoffset="['825','633','-110','-60']" 
+			 data-y="['top','top','top','top']" data-voffset="['203','203','590','515']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+ 
+			data-type="image" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"from":"x:right;","speed":1500,"to":"o:1;","delay":2750,"ease":"Power3.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+
+			style="z-index: 7;border-width:0px;"><img src="images/sliders/ipad.png" alt="" data-ww="['430px','430px','200px','170px']" data-hh="['540px','540px','251px','213px']" width="430" height="540" data-no-retina> </div>
+
+		<!-- LAYER NR. 4 -->
+		<div class="tp-caption   tp-resizeme rs-parallaxlevel-2" 
+			 id="slide-2934-layer-4" 
+			 data-x="['left','left','left','center']" data-hoffset="['895','703','212','-60']" 
+			 data-y="['top','top','top','top']" data-voffset="['291','291','632','557']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+ 
+			data-type="image" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"from":"z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":3700,"ease":"Power3.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+
+			style="z-index: 8;border-width:0px;"><img src="http://via.placeholder.com/290x374" alt="" data-ww="['290px','290px','135px','115px']" data-hh="['374px','374px','174px','148px']" width="290" height="374" data-no-retina> </div>
+
+		<!-- LAYER NR. 5 -->
+		<div class="tp-caption   tp-resizeme rs-parallaxlevel-3" 
+			 id="slide-2934-layer-5" 
+			 data-x="['left','left','left','left']" data-hoffset="['762','553','127','58']" 
+			 data-y="['top','top','top','top']" data-voffset="['298','297','622','529']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+ 
+			data-type="image" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"from":"x:right;","speed":1500,"to":"o:1;","delay":3000,"ease":"Power3.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+
+			style="z-index: 9;border-width:0px;"><img src="images/sliders/ihpone.png" alt="" data-ww="['260px','260px','130px','100px']" data-hh="['450px','450px','225px','173px']" width="260" height="450" data-no-retina> </div>
+
+
+		<!-- LAYER NR. 6 -->
+		<div class="tp-caption   tp-resizeme rs-parallaxlevel-3" 
+			 id="slide-2934-layer-6" 
+			 data-x="['left','left','left','left']" data-hoffset="['808','598','150','75']" 
+			 data-y="['top','top','top','top']" data-voffset="['380','379','663','560']" 
+						data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+ 
+			data-type="image" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"from":"z:0;rX:0deg;rY:0;rZ:0;sX:1.5;sY:1.5;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":3950,"ease":"Power3.easeOut"},{"delay":"wait","speed":1500,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[0,0,0,0]"
+			data-paddingright="[0,0,0,0]"
+			data-paddingbottom="[0,0,0,0]"
+			data-paddingleft="[0,0,0,0]"
+
+			style="z-index: 10;border-width:0px;"><img src="http://via.placeholder.com/170x286" alt="" data-ww="['170px','170px','85px','66px']" data-hh="['286px','286px','143px','111px']" width="170" height="286" data-no-retina> </div>
+
+             
+              </li>
+              
+
+                   <!-- SLIDE  -->
+     <li data-index="rs-2" data-transition="fade" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000"  data-rotate="0"  data-saveperformance="off"  data-title="Love it?" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                
+                <!-- MAIN IMAGE --> 
+
+                
+                <img src="http://via.placeholder.com/2000x1300"  alt=""  data-bgposition="center center" data-kenburns="on" data-duration="20000" data-ease="Linear.easeNone" data-scalestart="100" data-scaleend="120" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                
+
+                <!-- LAYER NR. 13 -->
+        <div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" 
+             data-x="['left','left','left','left']" data-hoffset="['45','45','20','0']" 
+             data-y="['top','top','top','top']" data-voffset="['360','220','130','120']" 
+             data-width="575"
+            data-height="310"
+            data-whitespace="nowrap"
+            data-type="shape" 
+            data-start="1000" 
+            data-responsive_offset="on" 
+            data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1000,"to":"o:1;","delay":1500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":3000,"to":"opacity:0;","ease":"Power4.easeIn"}]'
+            data-textAlign="['left','left','left','left']"
+            data-paddingtop="[0,0,0,0]"
+            data-paddingright="[0,0,0,0]"
+            data-paddingbottom="[0,0,0,0]"
+            data-paddingleft="[0,0,0,0]"
+            style="z-index: 6;background-color:rgba(255, 255, 255, 1);"> </div>
+
+
+             <!-- LAYER NR. 1 -->
+                <div class="tp-caption raleway text-dark tp-resizeme"
+			data-x="['left','left','left','left']" data-hoffset="['105','105','80','80']" 
+			data-y="['top','top','top','top']" data-voffset="['390','250','150','150']" 
+			data-fontsize="['16','16','14','14']"
+			data-lineheight="['70','70','70','50']"
+			data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"			 
+			data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+			data-transform_out="opacity:0;s:1000;s:1000;" 
+			data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+			data-start="1500" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 						
+			style="z-index: 7; white-space: nowrap;">Creative Pixel Perfect Design </div>
+            
+            
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption montserrat fweight-6 text-dark tp-resizeme"
+			data-x="['left','left','left','left']" data-hoffset="['105','105','80','80']" 
+			data-y="['top','top','top','top']" data-voffset="['420','280','180','190']" 
+			data-fontsize="['40','40','30','30']"
+			data-lineheight="['100','100','100','50']"
+			data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+			data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+			data-transform_out="opacity:0;s:1000;s:1000;" 
+			data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+			data-start="2000" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 						
+			style="z-index: 7; white-space: nowrap;">We Offer Perfect</div>
+            
+                <!-- LAYER NR. 2 -->
+                <div class="tp-caption montserrat fweight-6 text-dark tp-resizeme"
+			data-x="['left','left','left','left']" data-hoffset="['105','105','80','80']" 
+			data-y="['top','top','top','top']" data-voffset="['460','320','220','230']" 
+			data-fontsize="['40','40','30','30']"
+			data-lineheight="['100','100','100','50']"
+			data-width="none"
+			data-height="none"
+			data-whitespace="nowrap"
+			data-transform_idle="o:1;"
+			data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+			data-transform_out="opacity:0;s:1000;s:1000;" 
+			data-mask_in="x:0px;y:0px;s:inherit;e:inherit;"
+			data-start="2500" 
+			data-splitin="none" 
+			data-splitout="none" 
+			data-responsive_offset="on" 						
+			style="z-index: 7; white-space: nowrap;">Business Solution </div>
+
+              <!-- LAYER NR. 2 -->
+            <div class="tp-caption sbut2 h-dark" 
+			data-x="['left','left','left','left']" data-hoffset="['85','85','60','60']" 
+			data-y="['top','top','top','top']" data-voffset="['580','435','335','300']"
+			data-whitespace="nowrap"
+			data-type="text" 
+			data-responsive_offset="on" 
+
+			data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];","speed":2000,"to":"o:1;","delay":3000,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;","ease":"Power2.easeInOut"}]'
+			data-textAlign="['left','left','left','left']"
+			data-paddingtop="[10,10,10,10]"
+			data-paddingright="[20,20,20,20]"
+			data-paddingbottom="[10,10,10,10]"
+			data-paddingleft="[20,20,20,20]"
+
+			 style="z-index: 7;" ><a href="#">Get Started!</a>  </div>
+</li>
+
+            </ul>
+          </div>
+          <!-- END REVOLUTION SLIDER --> 
+        </div>
+      </div>
+      <!-- END REVOLUTION SLIDER WRAPPER --> 
+    </div>
+    <div class="clearfix"></div>
+    <!-- END OF SLIDER WRAPPER -->
+    
+   
+<div id="section2"></div>
+<section class="section-side-image section-light sec-tpadding-2 clearfix">
+      <div class="img-holder col-md-12 col-sm-12 pull-left">
+        <div class="background-imgholder" style="background:url(http://via.placeholder.com/2000x1500);"><img class="nodisplay-image" src="http://via.placeholder.com/2000x1500" alt=""/> </div>
+      </div>
+      <div class="container">
+       <div class="row">
+  
+  <div class="col-md-4">
+  <div class="ce-feature-box-55">
+  <div class="img-box"><img src="http://via.placeholder.com/600x500" alt="" class="img-responsive"/></div>
+  <div class="text-box text-center">
+   <h4 class="title font-weight-4">Who We Are</h4>
+                    <p class="small-text">Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo.</p>
+                    <div class="clearfix"></div>
+                    <br/>
+                    <a class="read-more" href="#"><i class="fa fa-play-circle" aria-hidden="true"></i> Read more</a>
+  
+  </div>
+  </div>
+  </div>
+  <!--end item-->
+  
+
+<div class="col-md-4">
+  <div class="ce-feature-box-55">
+  <div class="img-box"><img src="http://via.placeholder.com/600x500" alt="" class="img-responsive"/></div>
+  <div class="text-box text-center">
+   <h4 class="title font-weight-4">What We Do</h4>
+                    <p class="small-text">Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo.</p>
+                    <div class="clearfix"></div>
+                    <br/>
+                    <a class="read-more" href="#"><i class="fa fa-play-circle" aria-hidden="true"></i> Read more</a>
+  
+  </div>
+  </div>
+  </div>
+  <!--end item-->
+  
+  
+<div class="col-md-4">
+  <div class="ce-feature-box-55">
+  <div class="img-box"><img src="http://via.placeholder.com/600x500" alt="" class="img-responsive"/></div>
+  <div class="text-box text-center">
+   <h4 class="title font-weight-4">Our Success</h4>
+                    <p class="small-text">Lorem ipsum dolor sit amet consectetuer adipiscing elit Suspendisse et justo.</p>
+                    <div class="clearfix"></div>
+                    <br/>
+                    <a class="read-more" href="#"><i class="fa fa-play-circle" aria-hidden="true"></i> Read more</a>
+  
+  </div>
+  </div>
+  </div>
+  <!--end item-->
+  
+  
+  </div>
+   
+      </div>
+    </section>
+    <div class=" clearfix"></div>
+    <!--end section-->
+  
+  <div id="section3"></div>
+  <div class="parallax vertical-align" data-parallax-bg-image="http://via.placeholder.com/2000x1500" data-parallax-speed="0.9" data-parallax-direction="down">
+      <div class="parallax-overlay bg-opacity-8">
+        <div class="container sec-tpadding-2 sec-bpadding-2">
+          <div class="row slider-btn-14 btn-posi-1">
+
+ <div class="col-sm-12">
+                      <div class="sec-title-container less-padding-1 text-left">
+                        <h5 class="font-weight-4 less-mar-1 line-height-4 text-white opacity-6">Get Awesome Features and many more features</h5>
+                        <h2 class="font-weight-6 less-mar-1 line-height-5 text-white">We are offring awesome Features and <br/>many more Beautiful Pages</h2>
+                        <div class="ce-title-line align-left"></div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!--end title-->
+                    
+              
+              <div id="owl-demo9" class="owl-carousel owl-theme">
+                <div class="item">
+                   <div class="col-md-4">
+              <div class="ce-feature-box-3 text-center">
+                <div class="icon-plain-small center icon"><span class="icon-tablet"></span></div>
+                <br/>
+                <h5 class="title font-weight-5 text-white">Fully Responsive</h5>
+                <p class="text-white opacity-6">Praesent mattis commodo augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est.</p>
+              </div>
+            </div>
+            <!--end item-->
+            
+            <div class="col-md-4">
+              <div class="ce-feature-box-3 text-center">
+                <div class="icon-plain-small center icon"><span class="icon-calendar"></span></div>
+                <br/>
+                <h5 class="title font-weight-5 text-white">Classic Styles</h5>
+                <p class="text-white opacity-6">Praesent mattis commodo augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est.</p>
+              </div>
+            </div>
+            <!--end item-->
+            
+            <div class="col-md-4">
+              <div class="ce-feature-box-3 no-border text-center">
+                <div class="icon-plain-small center icon"><span class="icon-lock"></span></div>
+                <br/>
+                <h5 class="title font-weight-5 text-white">Secure Services</h5>
+               <p class="text-white opacity-6">Praesent mattis commodo augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est.</p>
+              </div>
+            </div>
+            <!--end item--> 
+                </div>
+                <!--end carousel item-->
+                
+                
+                <div class="item">
+                   <div class="col-md-4">
+              <div class="ce-feature-box-3 text-center">
+                <div class="icon-plain-small center icon"><span class="icon-linegraph"></span></div>
+                <br/>
+                <h5 class="title font-weight-5 text-white">Shortcodes</h5>
+                <p class="text-white opacity-6">Praesent mattis commodo augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est.</p>
+              </div>
+            </div>
+            <!--end item-->
+            
+            <div class="col-md-4">
+              <div class="ce-feature-box-3 text-center">
+                <div class="icon-plain-small center icon"><span class="icon-profile-female"></span></div>
+                <br/>
+                <h5 class="title font-weight-5 text-white">Icon Design</h5>
+                <p class="text-white opacity-6">Praesent mattis commodo augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est.</p>
+              </div>
+            </div>
+            <!--end item-->
+            
+            <div class="col-md-4">
+              <div class="ce-feature-box-3 no-border text-center">
+                <div class="icon-plain-small center icon"><span class="icon-chat"></span></div>
+                <br/>
+                <h5 class="title font-weight-5 text-white">Best Support</h5>
+               <p class="text-white opacity-6">Praesent mattis commodo augue Aliquam ornare hendrerit augue Cras tellus In pulvinar lectus a est.</p>
+              </div>
+            </div>
+            <!--end item--> 
+                </div>
+                <!--end carousel item-->
+                 
+                
+              </div>
+              <!--end carousel-->
+              
+                    
+           
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <!-- end section -->
+    
+    
+    <div id="section4"></div>
+     <section class="section-side-image section-light sec-padding clearfix">
+      <div class="img-holder col-md-12 col-sm-12 pull-left">
+        <div class="background-imgholder" style="background:url(http://via.placeholder.com/2000x1500);"><img class="nodisplay-image" src="http://via.placeholder.com/2000x1500" alt=""/> </div>
+      </div>
+      <div class="container">
+       <div class="row">
+
+ <div class="col-sm-12">
+            <div class="sec-title-container text-center">
+              <h5 class="font-weight-4 less-mar-1 line-height-4 ce-title-top-text">We are the best Creative Team</h5>
+              <h2 class="font-weight-6 less-mar-1 line-height-5">Meet Our Creative Team and<br/>
+                 Get Awesome Service</h2>
+                 <div class="ce-title-line"></div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <!--end title-->
+          
+          
+           <div class="col-md-3 col-sm-6 col-xs-12 margin-bottom">
+            <div class="ce-feature-box-69">
+            <div class="scicon-box">
+              <p>Praesent mattis commodo augue Aliquam ornare hendrerit . </p>
+                    <br/>
+                    <ul class="sc-icons">
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+              </div>
+              <div class="img-box">
+              <img src="http://via.placeholder.com/700x900" alt="" class="img-responsive"/>
+              </div>
+              <div class="text-box">
+              <h5 class="nopadding title">Matthew</h5>
+                  <p class="subtext">Founder and CEO</p>
+              </div>
+            </div>
+            <!--end feature box--> 
+            
+          </div>
+          <!--end item-->
+          
+          <div class="col-md-3 col-sm-6 col-xs-12 margin-bottom">
+            <div class="ce-feature-box-69">
+            <div class="scicon-box">
+              <p>Praesent mattis commodo augue Aliquam ornare hendrerit . </p>
+                    <br/>
+                    <ul class="sc-icons">
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+              </div>
+              <div class="img-box">
+              <img src="http://via.placeholder.com/700x900" alt="" class="img-responsive"/>
+              </div>
+              <div class="text-box">
+              <h5 class="nopadding title">Jennifer</h5>
+                  <p class="subtext">Designer</p>
+              </div>
+            </div>
+            <!--end feature box--> 
+            
+          </div>
+          <!--end item-->
+          
+           <div class="col-md-3 col-sm-6 col-xs-12 margin-bottom">
+            <div class="ce-feature-box-69">
+            <div class="scicon-box">
+              <p>Praesent mattis commodo augue Aliquam ornare hendrerit . </p>
+                    <br/>
+                    <ul class="sc-icons">
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+              </div>
+              <div class="img-box">
+              <img src="http://via.placeholder.com/700x900" alt="" class="img-responsive"/>
+              </div>
+              <div class="text-box">
+              <h5 class="nopadding title">William</h5>
+                  <p class="subtext">Marketing</p>
+              </div>
+            </div>
+            <!--end feature box--> 
+            
+          </div>
+          <!--end item-->
+          
+          
+           <div class="col-md-3 col-sm-6 col-xs-12 margin-bottom">
+            <div class="ce-feature-box-69">
+            <div class="scicon-box">
+              <p>Praesent mattis commodo augue Aliquam ornare hendrerit . </p>
+                    <br/>
+                    <ul class="sc-icons">
+                      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                      <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+              </div>
+              <div class="img-box">
+              
+              <img src="http://via.placeholder.com/700x900" alt="" class="img-responsive"/>
+              </div>
+
+              <div class="text-box">
+              <h5 class="nopadding title">Charlotte</h5>
+                  <p class="subtext">Developer</p>
+              </div>
+            </div>
+            <!--end feature box--> 
+            
+          </div>
+          <!--end item-->
+          
+
+        </div>
+   
+      </div>
+    </section>
+    <div class=" clearfix"></div>
+    <!--end section-->
+
+ <div id="section5"></div>
+ 
+   <section class="sec-padding">
+      <div class="container">
+        <div class="row">
+        
+        <div class="col-sm-12">
+            <div class="sec-title-container text-center">
+              <h5 class="font-weight-4 less-mar-1 line-height-4 ce-title-top-text">We are creating beautiful Products</h5>
+              <h2 class="font-weight-6 less-mar-1 line-height-5">Beautifully Crafted Products<br/>
+                and Designed Layouts</h2>
+                <div class="ce-title-line"></div>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <!--end title-->
+          
+          <div>
+            
+            <div id="js-grid-mosaic-flat" class="cbp cbp-l-grid-mosaic-flat">
+              <div class="cbp-item web-design graphic"> <a href="http://placehold.it/800x600" class="cbp-caption cbp-lightbox" data-title="Bolt UI<br>by Tiberiu Neamu">
+                <div class="cbp-caption-defaultWrap"> <img src="http://placehold.it/800x600" alt=""> </div>
+                <div class="cbp-caption-activeWrap">
+                  <div class="cbp-l-caption-alignCenter">
+                    <div class="cbp-l-caption-body">
+                      <div class="cbp-l-caption-title">Lorem ipsum dolor sit</div>
+                    </div>
+                  </div>
+                </div>
+                </a> </div>
+              <div class="cbp-item print motion"> <a href="http://placehold.it/800x600" class="cbp-caption cbp-lightbox" data-title="Bolt UI<br>by Tiberiu Neamu">
+                <div class="cbp-caption-defaultWrap"> <img src="http://placehold.it/800x600" alt=""> </div>
+                <div class="cbp-caption-activeWrap">
+                  <div class="cbp-l-caption-alignCenter">
+                    <div class="cbp-l-caption-body">
+                      <div class="cbp-l-caption-title">Lorem ipsum dolor sit</div>
+                    </div>
+                  </div>
+                </div>
+                </a> </div>
+              <div class="cbp-item print motion"> <a href="http://placehold.it/800x600" class="cbp-caption cbp-lightbox" data-title="Bolt UI<br>by Tiberiu Neamu">
+                <div class="cbp-caption-defaultWrap"> <img src="http://placehold.it/800x600" alt=""> </div>
+                <div class="cbp-caption-activeWrap">
+                  <div class="cbp-l-caption-alignCenter">
+                    <div class="cbp-l-caption-body">
+                      <div class="cbp-l-caption-title">Lorem ipsum dolor sit</div>
+                    </div>
+                  </div>
+                </div>
+                </a> </div>
+              <div class="cbp-item motion graphic"> <a href="http://placehold.it/800x600" class="cbp-caption cbp-lightbox" data-title="Bolt UI<br>by Tiberiu Neamu">
+                <div class="cbp-caption-defaultWrap"> <img src="http://placehold.it/800x600" alt=""> </div>
+                <div class="cbp-caption-activeWrap">
+                  <div class="cbp-l-caption-alignCenter">
+                    <div class="cbp-l-caption-body">
+                      <div class="cbp-l-caption-title">Lorem ipsum dolor sit</div>
+                    </div>
+                  </div>
+                </div>
+                </a> </div>
+              <div class="cbp-item web-design print"> <a href="http://placehold.it/800x600" class="cbp-caption cbp-lightbox" data-title="Bolt UI<br>by Tiberiu Neamu">
+                <div class="cbp-caption-defaultWrap"> <img src="http://placehold.it/800x600" alt=""> </div>
+                <div class="cbp-caption-activeWrap">
+                  <div class="cbp-l-caption-alignCenter">
+                    <div class="cbp-l-caption-body">
+                      <div class="cbp-l-caption-title">Lorem ipsum dolor sit</div>
+                    </div>
+                  </div>
+                </div>
+                </a> </div>
+              <div class="cbp-item print motion"> <a href="http://placehold.it/800x600" class="cbp-caption cbp-lightbox" data-title="Bolt UI<br>by Tiberiu Neamu">
+                <div class="cbp-caption-defaultWrap"> <img src="http://placehold.it/800x600" alt=""> </div>
+                <div class="cbp-caption-activeWrap">
+                  <div class="cbp-l-caption-alignCenter">
+                    <div class="cbp-l-caption-body">
+                      <div class="cbp-l-caption-title">Lorem ipsum dolor sit</div>
+                    </div>
+                  </div>
+                </div>
+                </a> </div>
+              <div class="cbp-item print motion"> <a href="http://placehold.it/800x600" class="cbp-caption cbp-lightbox" data-title="Bolt UI<br>by Tiberiu Neamu">
+                <div class="cbp-caption-defaultWrap"> <img src="http://placehold.it/800x600" alt=""> </div>
+                <div class="cbp-caption-activeWrap">
+                  <div class="cbp-l-caption-alignCenter">
+                    <div class="cbp-l-caption-body">
+                      <div class="cbp-l-caption-title">Lorem ipsum dolor sit</div>
+                    </div>
+                  </div>
+                </div>
+                </a> </div>
+              <div class="cbp-item print motion"> <a href="http://placehold.it/800x600" class="cbp-caption cbp-lightbox" data-title="Bolt UI<br>by Tiberiu Neamu">
+                <div class="cbp-caption-defaultWrap"> <img src="http://placehold.it/800x600" alt=""> </div>
+                <div class="cbp-caption-activeWrap">
+                  <div class="cbp-l-caption-alignCenter">
+                    <div class="cbp-l-caption-body">
+                      <div class="cbp-l-caption-title">Lorem ipsum dolor sit</div>
+                    </div>
+                  </div>
+                </div>
+                </a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="clearfix"></div>
+    <!-- end section -->
+    
+  
+  <div id="section6"></div>
+    <section class="section-side-image section-light sec-padding clearfix">
+      <div class="img-holder col-md-12 col-sm-12 pull-left">
+        <div class="background-imgholder" style="background:url(http://via.placeholder.com/1500x1000);"><img class="nodisplay-image" src="http://via.placeholder.com/1500x1000" alt=""/> </div>
+      </div>
+      <div class="container">
+       <div class="row">
+  
+  <div class="col-md-7 col-sm-12 col-xs-12">
+
+
+<div class="col-sm-12">
+                      <div class="sec-title-container less-padding-1 text-left">
+                        <h5 class="font-weight-4 less-mar-1 line-height-4 text-white opacity-6">Feel free to contact us</h5>
+                        <h2 class="font-weight-6 less-mar-1 line-height-5 text-white">Get in Touch With Us and <br/>Get Fast Service</h2>
+                        <div class="ce-title-line align-left"></div>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <!--end title-->
+
+            
+            <div class="text-box white padding-4">
+            <div class="one_half">
+      
+       
+        <div class="cforms_sty3">
+        
+        
+        <div id="form_status"></div>
+    	<form type="POST" id="gsr-contact" onSubmit="return valid_datas( this );">
+	        <label class="label">Name <em>*</em></label>
+	        <label class="input">
+	            <input type="text" name="name" id="name">
+	        </label>
+	        
+	        <div class="clearfix"></div>
+	        
+	        <label class="label">E-mail <em>*</em></label>
+	        <label class="input">
+	            <input type="email" name="email" id="email">
+	        </label>
+	
+	        <!-- <div class="clearfix"></div>
+	
+	
+	        <label class="label">Phone <em>*</em></label>
+	        <label class="input">
+	            <input type="text" name="phone" id="phone">
+	        </label> -->
+	
+	        <div class="clearfix"></div>
+	
+	        <label class="label">Subject <em>*</em></label>
+	        <label class="input">
+	            <input type="text" name="subject" id="subject">
+	        </label>
+	
+	        <div class="clearfix"></div>
+	
+	        <label class="label">Message <em>*</em></label>
+	        <label class="textarea">
+	            <textarea rows="5" name="message" id="message"></textarea>
+	        </label>
+	
+	        <div class="clearfix"></div>
+			<input type="hidden" name="token" value="FsWga4&@f6aw" />
+	        <button type="submit" class="button">Send Message</button>
+	        
+    	</form>	
+        
+        
+        </div>
+        
+      </div></div><!-- end .smart-wrap section -->
+            <!-- end .smart-forms section --> 
+          </div>
+          <!--end item-->
+
+
+  </div>
+   
+      </div>
+    </section>
+    <div class=" clearfix"></div>
+    <!--end section-->
+    
+    
+<div class="sec-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-12 colmargin clearfix margin-bottom">
+            <div class="fo-map">
+              <div class="footer-logo"><img src="images/logo/logo-dark.png" alt=""/></div>
+              <p class="text-dark">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Suspendisse et justo. Praesent mattis commodo </p>
+              <p class="text-dark">consectetuer adipiscing elit Suspendisse et justo Praesent mattis commodo.</p>
+              <h6 class="text-dark">© -codelayers.net</h6>
+            </div>
+          </div>
+          <!--end item-->
+          
+          <div class="col-md-3 col-xs-12 clearfix margin-bottom">
+            <h4 class="less-mar3 font-weight-5">Quick Links</h4>
+            <div class="clearfix"></div>
+            <br/>
+            <ul class="footer-quick-links-5">
+              <li><a href="#"> Home</a></li>
+              <li><a href="#"> Products</a></li>
+              <li><a href="#"> About Us</a></li>
+              <li><a href="#"> Our Services</a></li>
+              <li><a href="#"> Contact</a></li>
+            </ul>
+          </div>
+          <!--end item-->
+          
+          <div class="col-md-3 col-xs-12 clearfix margin-bottom">
+            <h4 class="less-mar3 font-weight-5">Our Services</h4>
+            <div class="clearfix"></div>
+            <br/>
+            <ul class="footer-quick-links-5">
+              <li><a href="#"> UI Design</a></li>
+              <li><a href="#"> Animations</a></li>
+              <li><a href="#"> Graphic Design</a></li>
+              <li><a href="#"> Responsive Design</a></li>
+              <li><a href="#"> Phot Gallery</a></li>
+            </ul>
+          </div>
+          <!--end item-->
+          
+          <div class="col-md-3 col-xs-12 clearfix margin-bottom">
+            <h4 class="less-mar3 font-weight-5">Contact Us</h4>
+            <div class="clearfix"></div>
+            <br/>
+            <address class="text-dark">
+            <strong class="text-dark uppercase">Address:</strong> <br>
+            No.28 - 63739 street lorem ipsum, <br>
+            ipsum City, Country
+            </address>
+            <span class="text-dark"><strong class="text-dark uppercase">Phone:</strong> + 1 (234) 567 8901</span><br>
+            <span class="text-dark"><strong class="text-dark uppercase">Email:</strong> support@yoursite.com </span><br>
+            <span class="text-dark"><strong class="text-dark uppercase">Fax:</strong> + 1 (234) 567 8901</span>
+            <ul class="footer-social-icons dark left-align icons-plain text-center">
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+            </ul>
+          </div>
+          <!--end item--> 
+          
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <!-- end section -->
+    
+    <section class="sec-padding-6 section-light">
+      <div class="container">
+        <div class="row">
+          <div class="fo-copyright-holder text-center"> Copyright © 2018 l Codelayers. All rights reserved.  </div>
+        </div>
+      </div>
+    </section>
+    <div class="clearfix"></div>
+    <!-- end section -->
+    
+    <a href="#" class="scrollup"></a><!-- end scroll to top of the page--> 
+    
+  </div>
+  <!--end site wrapper--> 
+</div>
+<!--end wrapper boxed--> 
+
+<!-- Scripts --> 
+<script src="js/jquery/jquery.js"></script> 
+<script src="js/bootstrap/bootstrap.min.js"></script> 
+
+<script src="js/less/less.min.js" data-env="development"></script> 
+
+<!-- Scripts END --> 
+
+<!-- Template scripts --> 
+<script src="js/megamenu/js/main.js"></script> 
+<script src="js/megamenu/js/onepage.js"></script> 
+<script src="js/owl-carousel/owl.carousel.js"></script> 
+<script src="js/owl-carousel/custom.js"></script> 
+<script src="js/template-custom/js/template-custom.js"></script> 
+<script type="text/javascript" src="js/cubeportfolio/jquery.cubeportfolio.min.js"></script> 
+<script type="text/javascript" src="js/cubeportfolio/main-mosaic3.js"></script> 
+
+<!-- REVOLUTION JS FILES --> 
+<script type="text/javascript" src="js/revolution-slider/js/jquery.themepunch.tools.min.js"></script> 
+<script type="text/javascript" src="js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script> 
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
+(Load Extensions only on Local File Systems ! 
+The following part can be removed on Server for On Demand Loading) --> 
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.actions.min.js"></script> 
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.carousel.min.js"></script> 
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js"></script> 
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js"></script> 
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.migration.min.js"></script> 
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.navigation.min.js"></script> 
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"></script> 
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"></script> 
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.video.min.js"></script> 
+<script type="text/javascript">
+	var tpj=jQuery;			
+	var revapi4;
+	tpj(document).ready(function() {
+	if(tpj("#rev_slider").revolution == undefined){
+	revslider_showDoubleJqueryError("#rev_slider");
+	}else{
+		revapi4 = tpj("#rev_slider").show().revolution({
+		sliderType:"standard",
+		jsFileLocation:"js/revolution-slider/js/",
+		sliderLayout:"auto",
+		dottedOverlay:"none",
+		delay:9000,
+		navigation: {
+		keyboardNavigation:"off",
+		keyboard_direction: "horizontal",
+		mouseScrollNavigation:"off",
+		onHoverStop:"off",
+		arrows: {
+		style:"uranus",
+		enable:true,
+		hide_onmobile:false,
+		hide_under:100,
+		hide_onleave:true,
+		hide_delay:200,
+		hide_delay_mobile:1200,
+		tmp:'',
+		left: {
+		h_align:"left",
+		v_align:"center",
+		h_offset:80,
+		v_offset:0
+		},
+		right: {
+		h_align:"right",
+		v_align:"center",
+		h_offset:80,
+		v_offset:0
+		}
+		}
+		,
+		touch:{
+		touchenabled:"on",
+		swipe_threshold: 75,
+		swipe_min_touches: 1,
+		swipe_direction: "horizontal",
+		drag_block_vertical: false
+	}
+	,
+										
+										
+										
+	},
+		viewPort: {
+		enable:true,
+		outof:"pause",
+		visible_area:"80%"
+	},
+	
+	responsiveLevels:[1240,1024,778,480],
+	gridwidth:[1240,1024,778,480],
+	gridheight:[870,730,600,550],
+	lazyType:"smart",
+		parallax: {
+		type:"mouse",
+		origo:"slidercenter",
+		speed:2000,
+		levels:[2,3,4,5,6,7,12,16,10,50],
+		},
+	shadow:0,
+	spinner:"off",
+	stopLoop:"off",
+	stopAfterLoops:-1,
+	stopAtSlide:-1,
+	shuffle:"off",
+	autoHeight:"off",
+	hideThumbsOnMobile:"off",
+	hideSliderAtLimit:0,
+	hideCaptionAtLimit:0,
+	hideAllCaptionAtLilmit:0,
+	disableProgressBar:"on",
+	debugMode:false,
+		fallbacks: {
+		simplifyAll:"off",
+		nextSlideOnWindowFocus:"off",
+		disableFocusListener:false,
+		}
+	});
+	}
+	});	/*ready*/
+</script> 
+<script>
+    $(window).load(function(){
+      setTimeout(function(){
+
+        $('.loader-live').fadeOut();
+      },1000);
+    })
+
+  </script>
+  <script src="js/parallax/parallax-background.min.js"></script> 
+<script>
+	(function ($) {
+		$('.parallax').parallaxBackground();
+	})(jQuery);
+</script>  
+<script src="js/functions/functions.js"></script>
+</body>
+</html>
